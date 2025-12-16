@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" >
+
+    <!-- QRコード読み取りのためカメラ権限を追加 -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <!-- ネットワーク（地図タイル取得用） -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- カメラ任意 -->
+    <uses-feature
+        android:name="android.hardware.camera.any"
+        android:required="false" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyAppNominoichi">
+
+        <!-- アプリ起動時の最初の画面（外部から起動される） -->
+        <activity
+            android:name=".StartActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.MyAppNominoichi">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- QR読み取りを行う画面（内部用） -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.MyAppNominoichi" />
+
+        <!-- 参加店舗一覧（スタンプ数タイトルが見える画面） -->
+        <activity
+            android:name=".StoreListActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.MyAppNominoichi" />
+
+        <!-- 店舗マップ（必要に応じて縦固定） -->
+        <activity
+            android:name=".StoreMapActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.MyAppNominoichi" />
+
+        <!-- ご利用案内画面など -->
+        <activity
+            android:name=".GuideActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.MyAppNominoichi" />
+
+        <!-- 店舗詳細画面 -->
+        <activity
+            android:name=".StoreDetailActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.MyAppNominoichi" />
+
+    </application>
+</manifest>

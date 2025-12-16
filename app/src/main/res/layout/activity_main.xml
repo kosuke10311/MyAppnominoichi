@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/appBackground"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <!-- アプリタイトル -->
+    <TextView
+        android:id="@+id/appTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:text="みなまた呑みの市"
+        android:textColor="@color/primaryText"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <!-- スタンプ数の表示 -->
+    <TextView
+        android:id="@+id/stampStatusText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:text="スタンプ：0 / 3"
+        android:textColor="@color/primaryText"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <!-- スタンプ進捗バー -->
+    <ProgressBar
+        android:id="@+id/stampProgress"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="220dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="20dp"
+        android:indeterminate="false"
+        android:max="3"
+        android:progress="0"
+        android:progressTint="@color/primary" />
+
+    <!-- スタンプアイコン見出し -->
+    <TextView
+        android:id="@+id/stampIconLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="獲得スタンプ"
+        android:textColor="@color/primaryText" />
+
+    <!-- スタンプアイコンのコンテナ -->
+    <LinearLayout
+        android:id="@+id/stampIconsContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal" />
+
+    <!-- QRコード読み取りボタン -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/scanButton"
+        style="@style/Widget.MaterialComponents.Button"
+        android:layout_width="220dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginBottom="14dp"
+        android:text="QRコードを読み取る"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        app:backgroundTint="@color/primary" />
+
+    <!-- 参加店舗を見るボタン -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/openStoresButton"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="220dp"
+        android:layout_height="48dp"
+        android:text="参加店舗を見る"
+        android:textAllCaps="false"
+        android:textColor="@color/secondary"
+        app:strokeColor="@color/secondary"
+        app:strokeWidth="2dp" />
+
+</LinearLayout>
+

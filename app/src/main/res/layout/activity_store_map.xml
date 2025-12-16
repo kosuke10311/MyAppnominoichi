@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <WebView
+        android:id="@+id/webMap"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!-- 上部に簡易タイトル（店名） -->
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:background="#66000000"
+        android:textColor="@android:color/white" />
+
+</FrameLayout>

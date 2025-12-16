@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 背景色（既存ポスターの淡色っぽい想定。あとで自由に差し替えOK） -->
+    <color name="appBackground">#FFF8F0</color>
+
+    <!-- 主要カラー -->
+    <color name="primary">#F05945</color>       <!-- アクセント（ボタン/進捗バー） -->
+    <color name="secondary">#2E4765</color>     <!-- サブ（店舗ボタンなど） -->
+    <color name="primaryText">#222222</color>   <!-- 文字色（濃いグレー） -->
+</resources>

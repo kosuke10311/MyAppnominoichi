@@ -1,0 +1,260 @@
+[
+  {
+    "id": "I01",
+    "name": "和風ダイニング遊食三昧",
+    "category": "居酒屋・お食事処",
+    "address": "水俣市浜町1-12-27",
+    "qrCode": "NOMI-I01-F5DW",
+    "openHours": "17:00〜24:00",
+    "menu": "刺身盛り合わせ、焼き鳥、地酒各種",
+    "photo": "store_i01"
+  },
+  {
+    "id": "I02",
+    "name": "洋風酒房ビッグマリーⅡ",
+    "category": "居酒屋・お食事処",
+    "address": "水俣市浜町1-2-24",
+    "qrCode": "NOMI-I02-60KM",
+    "openHours": "17:00〜24:00",
+    "menu": "刺身盛り合わせ、焼き鳥、地酒各種",
+    "photo": "store_i02"
+  },
+  {
+    "id": "I03",
+    "name": "ブラッスリーハル",
+    "category": "居酒屋・お食事処",
+    "address": "水俣市浜町1-10-3",
+    "qrCode": "NOMI-I03-BRE3"
+  },
+  {
+    "id": "I04",
+    "name": "とんちゃん",
+    "category": "居酒屋・お食事処",
+    "address": "水俣市浜町1-10-10",
+    "qrCode": "NOMI-I04-DEMM"
+  },
+  {
+    "id": "I05",
+    "name": "水香",
+    "category": "居酒屋・お食事処",
+    "address": "水俣市浜町1-13-14",
+    "qrCode": "NOMI-I05-3XVY"
+  },
+  {
+    "id": "I06",
+    "name": "炉端焼丸八",
+    "category": "居酒屋・お食事処",
+    "address": "水俣市わらび野1-1",
+    "qrCode": "NOMI-I06-ICAY"
+  },
+  {
+    "id": "I07",
+    "name": "串屋長右衛門",
+    "category": "居酒屋・お食事処",
+    "address": "水俣市浜町1-9-179",
+    "qrCode": "NOMI-I07-UP7N"
+  },
+  {
+    "id": "I08",
+    "name": "炉端焼山賊",
+    "category": "居酒屋・お食事処",
+    "address": "水俣市浜町1-8-18",
+    "qrCode": "NOMI-I08-KVF9"
+  },
+  {
+    "id": "I09",
+    "name": "居酒屋たつや",
+    "category": "居酒屋・お食事処",
+    "address": "水俣市大黒町1-3-32",
+    "qrCode": "NOMI-I09-06ES"
+  },
+  {
+    "id": "I10",
+    "name": "居酒屋さんきち",
+    "category": "居酒屋・お食事処",
+    "address": "水俣市桜井町3-2-8",
+    "qrCode": "NOMI-I10-OL1E"
+  },
+  {
+    "id": "I11",
+    "name": "呑み処食べ処一心大将",
+    "category": "居酒屋・お食事処",
+    "address": "水俣市幸町13-3",
+    "qrCode": "NOMI-I11-Q0VH"
+  },
+  {
+    "id": "I12",
+    "name": "食酒菜林吾",
+    "category": "居酒屋・お食事処",
+    "address": "水俣市昭和町2-4-12",
+    "qrCode": "NOMI-I12-MTPP"
+  },
+  {
+    "id": "I13",
+    "name": "味処池田屋",
+    "category": "居酒屋・お食事処",
+    "address": "水俣市浜町1-5-8",
+    "qrCode": "NOMI-I13-2UC5"
+  },
+  {
+    "id": "I14",
+    "name": "くつろぎ酒家和彩美",
+    "category": "居酒屋・お食事処",
+    "address": "水俣市浜町1-12-28",
+    "qrCode": "NOMI-I14-6W0C"
+  },
+  {
+    "id": "I15",
+    "name": "喫茶工房レウリーレ",
+    "category": "居酒屋・お食事処",
+    "address": "水俣市古賀町2-3-27",
+    "qrCode": "NOMI-I15-BERU"
+  },
+  {
+    "id": "I16",
+    "name": "洋食処ブロスカネコ",
+    "category": "居酒屋・お食事処",
+    "address": "水俣市旭町1-2-5",
+    "qrCode": "NOMI-I16-J8YT"
+  },
+  {
+    "id": "I17",
+    "name": "居酒屋きちんと",
+    "category": "居酒屋・お食事処",
+    "address": "水俣市大園町1-3-1",
+    "qrCode": "NOMI-I17-Q552"
+  },
+  {
+    "id": "I18",
+    "name": "",
+    "category": "居酒屋・お食事処",
+    "address": "",
+    "qrCode": "NOMI-I18-IJ6R"
+  },
+  {
+    "id": "I19",
+    "name": "",
+    "category": "居酒屋・お食事処",
+    "address": "",
+    "qrCode": "NOMI-I19-IJ6R"
+  },
+  {
+    "id": "I20",
+    "name": "",
+    "category": "居酒屋・お食事処",
+    "address": "",
+    "qrCode": "NOMI-I20-IJ6R"
+  },
+  {
+    "id": "B01",
+    "name": "スナックリサ",
+    "category": "スナック・バー・ラウンジ",
+    "address": "水俣市浜町1-8-13",
+    "qrCode": "NOMI-B01-9ZMQ"
+  },
+  {
+    "id": "B02",
+    "name": "スナックマドンナ",
+    "category": "スナック・バー・ラウンジ",
+    "address": "水俣市浜町2-9-1",
+    "qrCode": "NOMI-B02-ZFT3"
+  },
+  {
+    "id": "B03",
+    "name": "ナイトイン・ラム",
+    "category": "スナック・バー・ラウンジ",
+    "address": "水俣市浜町1-8-10",
+    "qrCode": "NOMI-B03-NJRU"
+  },
+  {
+    "id": "B04",
+    "name": "和風スナック古都",
+    "category": "スナック・バー・ラウンジ",
+    "address": "水俣市浜町1-8-10",
+    "qrCode": "NOMI-B04-WQO4"
+  },
+  {
+    "id": "B05",
+    "name": "缶詰BARKan缶",
+    "category": "スナック・バー・ラウンジ",
+    "address": "水俣市浜町1-1-17",
+    "qrCode": "NOMI-B05-JMNB"
+  },
+  {
+    "id": "B06",
+    "name": "角打ち酒蔵櫂",
+    "category": "スナック・バー・ラウンジ",
+    "address": "水俣市江南町3-1",
+    "qrCode": "NOMI-B06-UX6O"
+  },
+  {
+    "id": "B07",
+    "name": "スナック姉妹",
+    "category": "スナック・バー・ラウンジ",
+    "address": "水俣市浜町1-8-10山下ビル2階",
+    "qrCode": "NOMI-B07-3C8A"
+  },
+  {
+    "id": "B08",
+    "name": "モナミ",
+    "category": "スナック・バー・ラウンジ",
+    "address": "水俣市桜井町3-4-13",
+    "qrCode": "NOMI-B08-SMQO"
+  },
+  {
+    "id": "B09",
+    "name": "da・Saburafu",
+    "category": "スナック・バー・ラウンジ",
+    "address": "水俣市浜町1-10-13",
+    "qrCode": "NOMI-B09-F8AM"
+  },
+  {
+    "id": "B10",
+    "name": "Snack\"G\"",
+    "category": "スナック・バー・ラウンジ",
+    "address": "水俣市浜町1-8-10",
+    "qrCode": "NOMI-B10-8F82"
+  },
+  {
+    "id": "B11",
+    "name": "ロバートブラウン",
+    "category": "スナック・バー・ラウンジ",
+    "address": "水俣市浜町1-10-5",
+    "qrCode": "NOMI-B11-EFZ6"
+  },
+  {
+    "id": "B12",
+    "name": "サファイア",
+    "category": "スナック・バー・ラウンジ",
+    "address": "水俣市浜町1-10-5",
+    "qrCode": "NOMI-B12-DG9N"
+  },
+  {
+    "id": "B13",
+    "name": "洋蘭",
+    "category": "スナック・バー・ラウンジ",
+    "address": "水俣市桜井町2-1-6",
+    "qrCode": "NOMI-B13-YY2M"
+  },
+  {
+    "id": "B14",
+    "name": "スターダスト",
+    "category": "スナック・バー・ラウンジ",
+    "address": "水俣市浜町2-9-1",
+    "qrCode": "NOMI-B14-0WO5"
+  },
+  {
+    "id": "B15",
+    "name": "VENATION",
+    "category": "スナック・バー・ラウンジ",
+    "address": "水俣市浜町1-8-14シティマンション巴欧１F",
+    "qrCode": "NOMI-B15-TJFH"
+  },
+  {
+    "id": "B16",
+    "name": "THE NIGHT",
+    "category": "スナック・バー・ラウンジ",
+    "address": "水俣市大黒町1-1-34",
+    "qrCode": "NOMI-B16-2QIA"
+  }
+]
