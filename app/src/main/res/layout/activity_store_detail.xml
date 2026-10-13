@@ -64,7 +64,7 @@
             android:id="@+id/buttonOpenMap"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="地図で見る" />
+            android:text="@string/action_open_map" />
 
     </LinearLayout>
 </ScrollView>

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:padding="14dp"
@@ -9,7 +10,7 @@
         android:id="@+id/storeNameText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="店舗名"
+        tools:text="@string/store_name_placeholder"
         android:textStyle="bold"
         android:textSize="18sp" />
 
@@ -18,14 +19,14 @@
         android:id="@+id/storeAddressText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="住所"
+        tools:text="@string/store_address_placeholder"
         android:layout_marginTop="2dp" />
 
     <TextView
         android:id="@+id/textStampStatus"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text=""
+        android:text="@string/stamped"
         android:textSize="12sp"
         android:paddingStart="8dp"
         android:paddingEnd="8dp"

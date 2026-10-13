@@ -44,9 +44,9 @@ class StoreDetailActivity : AppCompatActivity() {
         textCategory.text = store.category
         textAddress.text = store.address
         textOpenHours.text =
-            if (store.openHours.isNotBlank()) "営業時間：${store.openHours}" else ""
+            if (store.openHours.isNotBlank()) getString(R.string.store_open_hours, store.openHours) else ""
         textMenu.text =
-            if (store.menu.isNotBlank()) "おすすめ：${store.menu}" else ""
+            if (store.menu.isNotBlank()) getString(R.string.store_menu, store.menu) else ""
         // ★ 写真を表示（stores.json の "photo": "store_i01" を使う）
         if (store.photo.isNotBlank()) {
             // photo には拡張子なしのリソース名が入っている想定

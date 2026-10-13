@@ -38,7 +38,6 @@ class StoreAdapter(
             val stamped = stampedIds.contains(store.id)
             if (stampText != null) {
                 stampText.visibility = if (stamped) View.VISIBLE else View.GONE
-                stampText.text = if (stamped) "スタンプ済み" else ""
             }
 
             itemView.setOnClickListener {

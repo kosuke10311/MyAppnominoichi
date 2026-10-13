@@ -7,6 +7,6 @@ class GuideActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_guide)
-        title = "使い方"
+        title = getString(R.string.guide_title)
     }
 }
