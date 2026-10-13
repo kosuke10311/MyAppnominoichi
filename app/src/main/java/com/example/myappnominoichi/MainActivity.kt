@@ -24,8 +24,6 @@ class MainActivity : AppCompatActivity() {
     private lateinit var scanButton: Button
     private lateinit var stampStore: StampStore
 
-    private val MAX_STAMPS = 3
-
     private val qrLauncher = registerForActivityResult(ScanContract()) { result ->
         if (result.contents != null) handleScannedCode(result.contents!!)
     }
@@ -33,7 +31,7 @@ class MainActivity : AppCompatActivity() {
     private val requestPermissionLauncher =
         registerForActivityResult(ActivityResultContracts.RequestPermission()) { granted ->
             if (granted) startQRScanner() else
-                Toast.makeText(this, "カメラ権限が必要です", Toast.LENGTH_SHORT).show()
+                toast(getString(R.string.camera_permission_required))
         }
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -69,7 +67,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun startQRScanner() {
         val opt = ScanOptions().apply {
-            setPrompt("QRコードを読み取ってください")
+            setPrompt(getString(R.string.scan_prompt))
             setBeepEnabled(true)
             setOrientationLocked(true)
         }
@@ -77,28 +75,36 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun handleScannedCode(code: String) {
-        val scanned = code.trim()
-        if (scanned.isBlank()) {
-            Toast.makeText(this, "無効なQRコードです", Toast.LENGTH_SHORT).show()
+        // 参加店舗のQRかを照合し、保存するのは店舗IDのみ
+        val store = StampRules.findStoreByQr(StoreRepository.getStores(this), code)
+        if (store == null) {
+            toast(getString(R.string.qr_store_not_found))
             return
         }
-        val already = stampStore.has(scanned)
-        stampStore.add(scanned)
+
+        val already = stampStore.has(store.id)
+        if (!already) stampStore.add(store.id)
         updateStampUI()
 
-        Toast.makeText(
-            this,
-            if (already) "この店舗は既にスタンプ済みです" else "スタンプ追加！（$scanned）",
-            Toast.LENGTH_SHORT
-        ).show()
+        val count = stampStore.count()
+        toast(
+            when {
+                already -> getString(R.string.stamp_already, store.name)
+                count == StampRules.MAX_STAMPS -> getString(R.string.stamp_completed, count)
+                else -> getString(R.string.stamp_added, store.name)
+            }
+        )
     }
 
+    private fun toast(msg: String) =
+        Toast.makeText(this, msg, Toast.LENGTH_SHORT).show()
+
     private fun updateStampUI() {
-        val count = stampStore.getAll().size
-        stampStatusText.text = "スタンプ：$count / $MAX_STAMPS"
+        val count = stampStore.count()
+        stampStatusText.text = getString(R.string.stamp_status, count, StampRules.MAX_STAMPS)
         findViewById<ProgressBar>(R.id.stampProgress).apply {
-            max = MAX_STAMPS
-            progress = count.coerceAtMost(MAX_STAMPS)
+            max = StampRules.MAX_STAMPS
+            progress = count.coerceAtMost(StampRules.MAX_STAMPS)
         }
         renderStampIcons(count)
     }

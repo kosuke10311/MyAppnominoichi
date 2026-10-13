@@ -1,3 +1,45 @@
 <resources>
-    <string name="app_name">My App nominoichi</string>
+    <string name="app_name">みなまた呑みの市</string>
+
+    <!-- 共通 -->
+    <string name="event_title">みなまた呑みの市</string>
+    <string name="action_open_map">地図で見る</string>
+    <string name="action_store_detail">店舗詳細を見る</string>
+
+    <!-- スタート画面 -->
+    <string name="start_drink">飲み歩く</string>
+    <string name="start_guide">使い方</string>
+
+    <!-- 使い方 -->
+    <string name="guide_title">使い方</string>
+    <string name="guide_placeholder">使い方（準備中）</string>
+
+    <!-- スタンプ画面 -->
+    <string name="stamp_status">スタンプ：%1$d / %2$d</string>
+    <string name="stamp_icons_label">獲得スタンプ</string>
+    <string name="scan_qr">QRコードを読み取る</string>
+    <string name="open_stores">参加店舗を見る</string>
+    <string name="scan_prompt">QRコードを読み取ってください</string>
+    <string name="camera_permission_required">カメラ権限が必要です</string>
+    <string name="qr_store_not_found">参加店舗のQRコードではありません</string>
+    <string name="stamp_already">『%1$s』はスタンプ済みです</string>
+    <string name="stamp_added">『%1$s』のスタンプを獲得！</string>
+    <string name="stamp_completed">🎉 スタンプが%1$d個たまりました！</string>
+
+    <!-- 店舗一覧 -->
+    <string name="store_list_title">参加店舗（%1$s）  スタンプ：%2$d / %3$d</string>
+    <string name="store_list_title_completed">参加店舗（%1$s）  🎉 スタンプ：%2$d / %3$d</string>
+    <string name="store_name_placeholder">店舗名</string>
+    <string name="store_address_placeholder">住所</string>
+    <string name="stamped">スタンプ済み</string>
+    <string name="scan_fab_description">QRスキャン</string>
+
+    <!-- 店舗詳細 -->
+    <string name="store_open_hours">営業時間：%1$s</string>
+    <string name="store_menu">おすすめ：%1$s</string>
+
+    <!-- 地図 -->
+    <string name="map_default_store_name">店舗</string>
+    <string name="map_title">📍 %1$s</string>
+    <string name="map_geocode_failed">住所の位置を取得できませんでした</string>
 </resources>
